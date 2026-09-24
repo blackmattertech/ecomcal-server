@@ -1,0 +1,81 @@
+{
+  "portals": [
+    { "id": "amazon", "name": "Amazon", "is_active": true },
+    { "id": "flipkart", "name": "Flipkart", "is_active": false },
+    { "id": "myntra", "name": "Myntra", "is_active": false }
+  ],
+  "portal_settings": {
+    "amazon": { "fee_gst_percent": 18 }
+  },
+  "categories": {
+    "amazon": [
+      "Apparel - Sweat Shirts and Jackets",
+      "Apparel - Shorts",
+      "Apparel - Men's T-shirts (except Polos, Tank tops and full sleeve tops)",
+      "Apparel - Shirts",
+      "Pants - Trousers, Jeans, Trackpants and Leggings",
+      "Backpacks, Laptop Sleeves and Bags"
+    ]
+  },
+  "referral_fees": {
+    "amazon": {
+      "Apparel - Sweat Shirts and Jackets": [
+        { "price_from": 0, "price_to": 999, "fee_percent": 0 },
+        { "price_from": 1000, "price_to": 9999, "fee_percent": 18 }
+      ],
+      "Apparel - Shorts": [
+        { "price_from": 0, "price_to": 999, "fee_percent": 0 },
+        { "price_from": 1000, "price_to": 9999, "fee_percent": 24 }
+      ],
+      "Apparel - Men's T-shirts (except Polos, Tank tops and full sleeve tops)": [
+        { "price_from": 0, "price_to": 999, "fee_percent": 0 },
+        { "price_from": 1000, "price_to": 9999, "fee_percent": 23 }
+      ],
+      "Apparel - Shirts": [
+        { "price_from": 0, "price_to": 999, "fee_percent": 0 },
+        { "price_from": 1000, "price_to": 9999, "fee_percent": 21 }
+      ],
+      "Pants - Trousers, Jeans, Trackpants and Leggings": [
+        { "price_from": 0, "price_to": 999, "fee_percent": 0 },
+        { "price_from": 1000, "price_to": 9999, "fee_percent": 19 }
+      ],
+      "Backpacks, Laptop Sleeves and Bags": [
+        { "price_from": 0, "price_to": 999, "fee_percent": 0 },
+        { "price_from": 1000, "price_to": 9999, "fee_percent": 14.5 }
+      ]
+    }
+  },
+  "closing_fees": {
+    "amazon": [
+      { "category_label": "All Products", "price_from": 0, "price_to": 300, "fee_inr": 27 },
+      { "category_label": "All Products", "price_from": 301, "price_to": 500, "fee_inr": 23 },
+      { "category_label": "All Products", "price_from": 501, "price_to": 1000, "fee_inr": 30 },
+      { "category_label": "All Products", "price_from": 1000, "price_to": 9999, "fee_inr": 55 }
+    ]
+  },
+  "weight_handling_fees": {
+    "amazon": {
+      "premium_advanced": {
+        "first_500g": 53,
+        "500g_1kg": 73,
+        "1kg_2kg": 110,
+        "after_2kg": 34,
+        "after_5kg": 18
+      },
+      "standard": {
+        "first_500g": 55,
+        "500g_1kg": 75,
+        "1kg_2kg": 112,
+        "after_2kg": 34,
+        "after_5kg": 18
+      },
+      "basic": {
+        "first_500g": 59,
+        "500g_1kg": 79,
+        "1kg_2kg": 116,
+        "after_2kg": 34,
+        "after_5kg": 18
+      }
+    }
+  }
+}
